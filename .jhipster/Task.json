@@ -1,0 +1,35 @@
+{
+  "annotations": {
+    "changelogDate": "20240604191942"
+  },
+  "applications": "*",
+  "clientRootFolder": "jhipsterSampleApplication",
+  "databaseType": "sql",
+  "documentation": "Task entity.\\n@author The JHipster team.",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "microserviceName": "jhipsterSampleApplication",
+  "name": "Task",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "job",
+      "otherEntityRelationshipName": "task",
+      "relationshipName": "job",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

@@ -1,0 +1,42 @@
+{
+  "annotations": {
+    "changelogDate": "20240604191940"
+  },
+  "applications": "*",
+  "clientRootFolder": "jhipsterSampleApplication",
+  "databaseType": "sql",
+  "documentation": "not an ignored comment",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "streetAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postalCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stateProvince",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "microserviceName": "jhipsterSampleApplication",
+  "name": "Location",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "country",
+      "relationshipName": "country",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
